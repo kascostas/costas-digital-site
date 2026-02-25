@@ -394,6 +394,40 @@ h1 {
     0 4px 12px rgba(77, 126, 214, 0.10),
     inset 0 1px 0 rgba(255,255,255,0.58);
 }
+
+html[data-theme='dark'] .float-card:hover {
+  border-color: rgba(255,255,255,0.28);
+  background: linear-gradient(160deg, rgba(34,44,64,0.72), rgba(24,31,47,0.58));
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.34),
+    0 4px 12px rgba(0,0,0,0.22),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+}
+
+html[data-theme='dark'] .float-card:hover h2,
+html[data-theme='dark'] .float-card:hover h3,
+html[data-theme='dark'] .float-card:hover p,
+html[data-theme='dark'] .float-card:hover li {
+  color: #eef3ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme='light']) .float-card:hover {
+    border-color: rgba(255,255,255,0.28);
+    background: linear-gradient(160deg, rgba(34,44,64,0.72), rgba(24,31,47,0.58));
+    box-shadow:
+      0 14px 30px rgba(0,0,0,0.34),
+      0 4px 12px rgba(0,0,0,0.22),
+      inset 0 1px 0 rgba(255,255,255,0.18);
+  }
+
+  html:not([data-theme='light']) .float-card:hover h2,
+  html:not([data-theme='light']) .float-card:hover h3,
+  html:not([data-theme='light']) .float-card:hover p,
+  html:not([data-theme='light']) .float-card:hover li {
+    color: #eef3ff;
+  }
+}
 .card h2, .card h3 { margin-top: 0; }
 .card p, .card li { color: var(--text-soft); }
 .card ul { margin: 0; padding-left: 18px; }
