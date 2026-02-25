@@ -22,11 +22,27 @@ const panelObserver = new IntersectionObserver((entries) => {
 
 for (const panel of document.querySelectorAll('.panel')) panelObserver.observe(panel);
 
-window.addEventListener('scroll', () => {
-  const y = window.scrollY * 0.04;
-  for (const card of document.querySelectorAll('.float-card')) {
+const floatCards = [...document.querySelectorAll('.float-card')];
+let ticking = false;
+
+function updateFloatCards() {
+  const vh = window.innerHeight;
+  for (const card of floatCards) {
     const rect = card.getBoundingClientRect();
-    const offset = (window.innerHeight - rect.top) * 0.006;
-    card.style.transform = `translateY(${Math.max(-8, Math.min(8, offset - y * 0.04))}px)`;
+    const center = rect.top + rect.height / 2;
+    const progress = (center - vh / 2) / (vh / 2);
+    const drift = Math.max(-8, Math.min(8, -progress * 8));
+    card.style.setProperty('--floatY', `${drift.toFixed(2)}px`);
+  }
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(updateFloatCards);
+    ticking = true;
   }
 }, { passive: true });
+
+window.addEventListener('resize', updateFloatCards);
+updateFloatCards();
