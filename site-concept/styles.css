@@ -6,6 +6,7 @@ body{font-family:Inter,sans-serif;background:#07101a;color:#ecf4ff;overflow-x:hi
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
 .logo{font-weight:900;letter-spacing:.08em;font-size:.82rem;color:#9cc6ff}
 .hero{min-height:66vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:22px;padding:20px 0 6px}
+.hero-box{background:linear-gradient(165deg,rgba(24,40,64,.72),rgba(16,26,42,.62));border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:22px 22px 18px;box-shadow:0 20px 40px rgba(0,0,0,.28)}
 .kicker{font-size:.78rem;color:#75b2ff;letter-spacing:.18em}
 h1{font-size:clamp(2rem,6vw,4.8rem);line-height:.95;margin:8px 0 14px;text-shadow:0 6px 24px rgba(73,145,255,.2)}
 .sub{color:#c2d1e5;max-width:560px}
@@ -28,4 +29,4 @@ h1{font-size:clamp(2rem,6vw,4.8rem);line-height:.95;margin:8px 0 14px;text-shado
 .ex-card img{width:100%;height:220px;object-fit:cover;display:block}
 .ex-card figcaption{padding:10px 11px;color:#bcd0e8;font-size:.9rem}
 .foot{padding:20px 0 34px;color:#8ea4c3}
-@media(max-width:900px){.hero,.grid,.examples-grid,.channels-grid{grid-template-columns:1fr}.card img{min-height:320px}}
+@media(max-width:900px){.hero,.grid,.examples-grid,.channels-grid{grid-template-columns:1fr}.hero-box{padding:18px}.card img{min-height:320px}}
