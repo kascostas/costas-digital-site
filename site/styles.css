@@ -94,6 +94,22 @@ body {
   color: var(--text);
   background: linear-gradient(140deg, var(--bg-a), var(--bg-b));
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20% -10% auto -10%;
+  height: 80vh;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(42% 42% at 18% 24%, rgba(91, 145, 255, 0.34), transparent 70%),
+    radial-gradient(36% 36% at 78% 22%, rgba(255, 167, 201, 0.30), transparent 70%),
+    radial-gradient(34% 34% at 46% 82%, rgba(115, 241, 223, 0.26), transparent 70%);
+  filter: blur(26px) saturate(120%);
 }
 
 .bg {
@@ -106,19 +122,24 @@ body {
     radial-gradient(640px 320px at 40% 80%, rgba(168, 255, 235, 0.25), transparent 70%);
 }
 
+header, main, footer {
+  position: relative;
+  z-index: 2;
+}
+
 .container { width: min(1120px, 92%); margin: 0 auto; }
 
 .glass {
   position: relative;
   isolation: isolate;
-  background: linear-gradient(160deg, var(--glass-top), var(--glass-bottom));
+  background: linear-gradient(160deg, color-mix(in srgb, var(--glass-top) 78%, transparent 22%), color-mix(in srgb, var(--glass-bottom) 72%, transparent 28%));
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(16px) saturate(132%);
-  -webkit-backdrop-filter: blur(16px) saturate(132%);
+  backdrop-filter: blur(24px) saturate(150%) contrast(106%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%) contrast(106%);
   box-shadow:
     var(--shadow),
-    inset 0 1px 0 rgba(255,255,255,0.46),
-    inset 0 -1px 0 rgba(255,255,255,0.16);
+    inset 0 1px 0 rgba(255,255,255,0.52),
+    inset 0 -1px 0 rgba(255,255,255,0.14);
 }
 
 .glass::after {
@@ -127,9 +148,11 @@ body {
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: linear-gradient(115deg, var(--glass-reflect), rgba(255,255,255,0.06) 38%, rgba(255,255,255,0) 60%);
+  background:
+    linear-gradient(115deg, color-mix(in srgb, var(--glass-reflect) 82%, white 18%), rgba(255,255,255,0.08) 36%, rgba(255,255,255,0) 62%),
+    linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0) 28%);
   mix-blend-mode: screen;
-  opacity: 0.52;
+  opacity: 0.68;
   z-index: 1;
 }
 
