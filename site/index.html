@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Costas Kastamoulas | Retail & Growth Marketing</title>
-    <meta name="description" content="Personal website of Costas Kastamoulas — Retail Sales & Marketing Manager focused on ROI, e-commerce growth, and AI automation." />
+    <title>Costas Kastamoulas | Growth Marketer</title>
+    <meta name="description" content="A cinematic personal website for Costas Kastamoulas, retail and growth marketing strategist." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="nav-wrap">
+    <div class="bg-glow"></div>
+    <div class="grain"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <header class="nav-wrap glass reveal">
       <div class="container nav">
-        <a class="brand" href="#">Costas<span>.</span></a>
+        <a class="brand" href="#home">Costas<span>Vision</span></a>
         <nav>
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#results">Results</a>
+          <a href="#impact">Impact</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -25,106 +29,117 @@
 
     <main>
       <section class="hero" id="home">
-        <div class="slider">
-          <article class="slide active">
-            <p class="eyebrow">Retail • E-commerce • B2B</p>
-            <h1>I build revenue-first marketing systems, not vanity campaigns.</h1>
-            <p class="lead">Strategic planning, vendor funding, execution, and optimization — aligned to ROI and growth.</p>
-          </article>
-          <article class="slide">
-            <p class="eyebrow">Commercial + Technical</p>
-            <h1>From campaign concept to sales impact, fully measurable.</h1>
-            <p class="lead">I connect teams, budgets, and automation to scale results across channels.</p>
-          </article>
-          <article class="slide">
-            <p class="eyebrow">AI & Automation</p>
-            <h1>I integrate AI workflows that save time and improve decisions.</h1>
-            <p class="lead">Practical automation for marketing operations, reporting, and business intelligence.</p>
-          </article>
-          <div class="slider-controls">
-            <button id="prevBtn" aria-label="Previous slide">‹</button>
-            <div id="dots" class="dots"></div>
-            <button id="nextBtn" aria-label="Next slide">›</button>
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner">
+          <p class="eyebrow reveal">Retail • Ecommerce • B2B • AI</p>
+          <h1 class="hero-title reveal">I engineer marketing systems that turn strategy into revenue.</h1>
+          <p class="lead reveal">Commercial thinking, creative execution, and automation built for measurable growth.</p>
+          <div class="hero-actions reveal">
+            <a class="btn magnetic" href="#contact">Work with me</a>
+            <a class="btn ghost magnetic" href="#services">See capabilities</a>
           </div>
         </div>
+        <div class="scroll-cue">SCROLL</div>
       </section>
 
       <section class="section" id="about">
         <div class="container grid two">
-          <div>
-            <h2>About me</h2>
+          <article class="card glass reveal rise">
+            <h2>About</h2>
             <p>
-              I’m <strong>Costas Kastamoulas</strong>, Retail Sales & Marketing Manager focused on turning strategy into measurable commercial outcomes.
-              I work at the intersection of retail, e-commerce, and B2B growth.
+              I am Costas Kastamoulas, a growth driven marketer combining retail and ecommerce execution with strict ROI discipline.
+              I align teams, budgets, channels, and technology into one operating engine.
             </p>
             <p>
-              My approach is simple: align budgets, teams, vendor partnerships, and execution around clear KPIs — then optimize continuously.
+              My approach is simple and effective.
+              Clear goals.
+              Strong narrative.
+              Continuous optimization.
             </p>
-          </div>
-          <div class="card highlight">
-            <h3>Core Focus</h3>
+          </article>
+          <article class="card glass reveal rise delay-1">
+            <h3>Core strengths</h3>
             <ul>
-              <li>Revenue growth & demand generation</li>
-              <li>Campaign strategy with ROI accountability</li>
-              <li>MDF / Co-op vendor collaboration</li>
-              <li>Process + AI automation for marketing operations</li>
+              <li>Commercial strategy and execution</li>
+              <li>Vendor funding and budget governance</li>
+              <li>Data driven optimization</li>
+              <li>AI automation for marketing operations</li>
             </ul>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="section dark" id="services">
+      <section class="section" id="services">
         <div class="container">
-          <h2>What I do</h2>
+          <h2 class="center reveal">Capabilities</h2>
           <div class="cards">
-            <article class="card">
+            <article class="card glass tilt reveal rise">
               <h3>Growth Strategy</h3>
-              <p>Commercial planning across retail, e-commerce, and B2B channels with clear growth priorities.</p>
+              <p>Channel planning and commercial prioritization for sustainable revenue growth.</p>
             </article>
-            <article class="card">
-              <h3>Campaign Execution</h3>
-              <p>End-to-end campaign design and rollout with performance monitoring and iterative optimization.</p>
+            <article class="card glass tilt reveal rise delay-1">
+              <h3>Campaign Systems</h3>
+              <p>Creative to execution workflows with fast testing and smart iteration loops.</p>
             </article>
-            <article class="card">
-              <h3>Vendor & Budget Management</h3>
-              <p>Smart use of MDF/co-op funds, budget governance, and alignment with partner brands.</p>
+            <article class="card glass tilt reveal rise delay-2">
+              <h3>Retail and B2B Alignment</h3>
+              <p>Unified messaging and action plans across stores, ecommerce, and partner channels.</p>
             </article>
-            <article class="card">
-              <h3>AI Marketing Ops</h3>
-              <p>Practical AI workflows to automate repetitive tasks and improve reporting, speed, and decision quality.</p>
+            <article class="card glass tilt reveal rise delay-3">
+              <h3>AI Operations</h3>
+              <p>Automation that saves time, improves reporting, and supports better decisions.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="results">
+      <section class="section" id="impact">
         <div class="container">
-          <h2>Results mindset</h2>
+          <h2 class="center reveal">Impact mindset</h2>
           <div class="stats">
-            <div class="stat"><span>ROI</span><strong>First</strong></div>
-            <div class="stat"><span>Budgeting</span><strong>Disciplined</strong></div>
-            <div class="stat"><span>Execution</span><strong>Data-led</strong></div>
-            <div class="stat"><span>Systems</span><strong>Scalable</strong></div>
+            <div class="stat glass reveal rise">
+              <span>Approach</span>
+              <strong data-target="100">0</strong>
+              <em>Percent ROI focus</em>
+            </div>
+            <div class="stat glass reveal rise delay-1">
+              <span>Execution</span>
+              <strong data-target="360">0</strong>
+              <em>Full cycle campaigns</em>
+            </div>
+            <div class="stat glass reveal rise delay-2">
+              <span>Optimization</span>
+              <strong data-target="24">0</strong>
+              <em>Always on monthly cadence</em>
+            </div>
+            <div class="stat glass reveal rise delay-3">
+              <span>Automation</span>
+              <strong data-target="8">0</strong>
+              <em>Core workflow pillars</em>
+            </div>
           </div>
-          <p class="center muted">Add your real case studies, KPIs, and testimonials here for maximum impact.</p>
         </div>
       </section>
 
-      <section class="section cta" id="contact">
-        <div class="container cta-box">
-          <h2>Let’s build your next growth phase.</h2>
-          <p>I help brands and teams move from activity to measurable results.</p>
-          <a class="btn" href="mailto:kastamoulas@outlook.com">Contact Me</a>
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="cta glass reveal rise">
+            <h2>Ready for your next growth phase</h2>
+            <p>Let us build a performance engine that compounds results.</p>
+            <a class="btn magnetic" href="mailto:kastamoulas@outlook.com">Contact me</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="reveal">
       <div class="container footer">
-        <p>© <span id="year"></span> Costas Kastamoulas. All rights reserved.</p>
+        <p>© <span id="year"></span> Costas Kastamoulas</p>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
