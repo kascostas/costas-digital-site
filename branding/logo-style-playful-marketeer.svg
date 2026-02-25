@@ -1,0 +1,16 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="p1" x1="50" y1="50" x2="330" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="420" rx="28" fill="#111827"/>
+  <rect x="62" y="62" width="296" height="296" rx="76" fill="url(#p1)" fill-opacity="0.22"/>
+  <circle cx="210" cy="210" r="84" stroke="#FDE68A" stroke-width="14"/>
+  <path d="M210 210L276 162" stroke="#FCA5A5" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="210" cy="210" r="10" fill="#FDE68A"/>
+  <text x="392" y="200" fill="#F9FAFB" font-size="82" font-family="Inter, Segoe UI, Arial" font-weight="800">COSTAS</text>
+  <text x="392" y="270" fill="#FDBA74" font-size="46" font-family="Inter, Segoe UI, Arial" font-weight="700" letter-spacing="5">DIGITAL</text>
+  <text x="392" y="318" fill="#C4B5FD" font-size="24" font-family="Inter, Segoe UI, Arial">TURNING CLICKS INTO CUSTOMERS</text>
+</svg>
