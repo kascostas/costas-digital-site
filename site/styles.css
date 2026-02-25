@@ -5,8 +5,20 @@
   --muted: #5c6575;
   --line: rgba(255, 255, 255, 0.55);
   --glass: rgba(255, 255, 255, 0.5);
-  --shadow: 0 14px 40px rgba(67, 88, 130, 0.18);
+  --shadow: 0 12px 30px rgba(67, 88, 130, 0.16);
   --radius: 22px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-a: #0c1019;
+    --bg-b: #121827;
+    --text: #eaf0ff;
+    --muted: #aab6cc;
+    --line: rgba(255, 255, 255, 0.18);
+    --glass: rgba(22, 28, 40, 0.52);
+    --shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -32,14 +44,25 @@ body {
 
 .glass {
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.58), rgba(255,255,255,0.28));
-  border: 1px solid rgba(255,255,255,0.72);
-  backdrop-filter: blur(22px) saturate(165%);
-  -webkit-backdrop-filter: blur(22px) saturate(165%);
+    linear-gradient(135deg, rgba(255,255,255,0.50), rgba(255,255,255,0.24));
+  border: 1px solid rgba(255,255,255,0.60);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
   box-shadow:
-    0 12px 34px rgba(54, 77, 122, 0.18),
-    inset 0 1px 0 rgba(255,255,255,0.75),
-    inset 0 -1px 0 rgba(255,255,255,0.35);
+    0 10px 26px rgba(54, 77, 122, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.62),
+    inset 0 -1px 0 rgba(255,255,255,0.24);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass {
+    background: linear-gradient(135deg, rgba(32, 40, 58, 0.62), rgba(24, 31, 46, 0.46));
+    border: 1px solid rgba(255,255,255,0.22);
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.34),
+      inset 0 1px 0 rgba(255,255,255,0.12),
+      inset 0 -1px 0 rgba(255,255,255,0.06);
+  }
 }
 
 .nav-wrap {
@@ -69,6 +92,23 @@ nav a {
   font-weight: 600;
 }
 nav a:hover { color: var(--text); }
+
+@media (prefers-color-scheme: dark) {
+  .hero-card p,
+  .card p,
+  .card li,
+  .cta p { color: #d3ddef; }
+  .eyebrow { color: #8eb7ff; }
+  .btn.solid {
+    background: #eaf0ff;
+    color: #101522;
+  }
+  .btn.ghost {
+    border-color: rgba(234, 240, 255, 0.32);
+    color: #eaf0ff;
+  }
+  .footer { color: #aab6cc; }
+}
 
 .hero { padding: 60px 0 20px; }
 .hero-card {
@@ -148,14 +188,14 @@ h1 {
   will-change: transform;
 }
 .float-card:hover {
-  transform: translateY(calc(var(--floatY) - 14px)) scale(1.018);
-  border-color: rgba(255,255,255,0.95);
+  transform: translateY(calc(var(--floatY) - 8px)) scale(1.01);
+  border-color: rgba(255,255,255,0.82);
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.70), rgba(255,255,255,0.34));
+    linear-gradient(135deg, rgba(255,255,255,0.62), rgba(255,255,255,0.30));
   box-shadow:
-    0 26px 55px rgba(48, 70, 118, 0.28),
-    0 10px 24px rgba(77, 126, 214, 0.22),
-    inset 0 1px 0 rgba(255,255,255,0.92);
+    0 16px 32px rgba(48, 70, 118, 0.20),
+    0 6px 16px rgba(77, 126, 214, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.84);
 }
 .card h2, .card h3 { margin-top: 0; }
 .card p, .card li { color: #2f394a; }
