@@ -1,6 +1,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const themeSelect = document.getElementById('themeSelect');
+const themeButtons = [...document.querySelectorAll('.theme-btn')];
 const savedTheme = localStorage.getItem('themeMode') || 'auto';
 
 function applyTheme(mode) {
@@ -11,13 +11,17 @@ function applyTheme(mode) {
   } else {
     document.documentElement.removeAttribute('data-theme');
   }
+
+  for (const btn of themeButtons) {
+    btn.classList.toggle('active', btn.dataset.theme === mode);
+  }
 }
 
-if (themeSelect) {
-  themeSelect.value = savedTheme;
-  applyTheme(savedTheme);
-  themeSelect.addEventListener('change', () => {
-    const mode = themeSelect.value;
+applyTheme(savedTheme);
+
+for (const btn of themeButtons) {
+  btn.addEventListener('click', () => {
+    const mode = btn.dataset.theme || 'auto';
     localStorage.setItem('themeMode', mode);
     applyTheme(mode);
   });

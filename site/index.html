@@ -20,12 +20,17 @@
           <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <label class="theme-menu" for="themeSelect">Theme</label>
-          <select id="themeSelect" class="theme-select" aria-label="Theme mode">
-            <option value="auto">Auto</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-          </select>
+          <div class="theme-switch" role="group" aria-label="Theme mode">
+            <button class="theme-btn" data-theme="auto" aria-label="Auto theme" title="Auto">
+              <span aria-hidden="true">🖥️</span>
+            </button>
+            <button class="theme-btn" data-theme="light" aria-label="Light theme" title="Light">
+              <span aria-hidden="true">☀️</span>
+            </button>
+            <button class="theme-btn" data-theme="dark" aria-label="Dark theme" title="Dark">
+              <span aria-hidden="true">🌙</span>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
