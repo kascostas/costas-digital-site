@@ -1,6 +1,6 @@
 :root {
-  --bg-a: #eaf1fb;
-  --bg-b: #e3ecfa;
+  --bg-a: #f7f8fb;
+  --bg-b: #eceff5;
   --text: #111318;
   --muted: #5c6575;
   --text-soft: #2f394a;
@@ -45,8 +45,8 @@
 
 html[data-theme='light'] {
   color-scheme: light;
-  --bg-a: #eaf1fb;
-  --bg-b: #e3ecfa;
+  --bg-a: #f7f8fb;
+  --bg-b: #eceff5;
   --text: #111318;
   --muted: #5c6575;
   --text-soft: #2f394a;
@@ -106,10 +106,10 @@ body::before {
   pointer-events: none;
   z-index: 1;
   background:
-    radial-gradient(42% 42% at 18% 24%, rgba(91, 145, 255, 0.34), transparent 70%),
-    radial-gradient(36% 36% at 78% 22%, rgba(255, 167, 201, 0.30), transparent 70%),
-    radial-gradient(34% 34% at 46% 82%, rgba(115, 241, 223, 0.26), transparent 70%);
-  filter: blur(26px) saturate(120%);
+    radial-gradient(44% 40% at 18% 22%, rgba(255, 255, 255, 0.72), transparent 72%),
+    radial-gradient(36% 34% at 82% 20%, rgba(213, 220, 235, 0.45), transparent 70%),
+    radial-gradient(30% 28% at 46% 78%, rgba(240, 243, 250, 0.55), transparent 72%);
+  filter: blur(24px) saturate(105%);
 }
 
 .bg {
@@ -118,9 +118,9 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(700px 380px at 10% 15%, rgba(122, 164, 255, 0.35), transparent 70%),
-    radial-gradient(620px 300px at 82% 20%, rgba(255, 180, 214, 0.28), transparent 70%),
-    radial-gradient(640px 320px at 40% 80%, rgba(168, 255, 235, 0.25), transparent 70%);
+    linear-gradient(160deg, rgba(255,255,255,0.78), rgba(237,241,248,0.68)),
+    radial-gradient(800px 420px at 12% 14%, rgba(255,255,255,0.72), transparent 72%),
+    radial-gradient(680px 360px at 84% 18%, rgba(224,230,241,0.48), transparent 72%);
 }
 
 header, main, footer {
