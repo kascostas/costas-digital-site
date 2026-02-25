@@ -1,5 +1,28 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const themeSelect = document.getElementById('themeSelect');
+const savedTheme = localStorage.getItem('themeMode') || 'auto';
+
+function applyTheme(mode) {
+  if (mode === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else if (mode === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+}
+
+if (themeSelect) {
+  themeSelect.value = savedTheme;
+  applyTheme(savedTheme);
+  themeSelect.addEventListener('change', () => {
+    const mode = themeSelect.value;
+    localStorage.setItem('themeMode', mode);
+    applyTheme(mode);
+  });
+}
+
 for (const panel of document.querySelectorAll('.panel')) {
   panel.classList.add('panel-hidden');
 }
