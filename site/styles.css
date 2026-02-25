@@ -133,7 +133,7 @@ header, main, footer {
 .glass {
   position: relative;
   isolation: isolate;
-  background: linear-gradient(160deg, color-mix(in srgb, var(--glass-top) 78%, transparent 22%), color-mix(in srgb, var(--glass-bottom) 72%, transparent 28%));
+  background: linear-gradient(160deg, var(--glass-top), var(--glass-bottom));
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(30px) saturate(165%) contrast(108%);
   -webkit-backdrop-filter: blur(30px) saturate(165%) contrast(108%);
@@ -150,7 +150,7 @@ header, main, footer {
   border-radius: inherit;
   pointer-events: none;
   background:
-    linear-gradient(115deg, color-mix(in srgb, var(--glass-reflect) 82%, white 18%), rgba(255,255,255,0.08) 36%, rgba(255,255,255,0) 62%),
+    linear-gradient(115deg, var(--glass-reflect), rgba(255,255,255,0.08) 36%, rgba(255,255,255,0) 62%),
     linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0) 28%);
   mix-blend-mode: screen;
   opacity: 0.68;
@@ -335,8 +335,8 @@ h1 {
 }
 .float-card:hover {
   transform: translateY(calc(var(--floatY) - 5px)) scale(1.006);
-  border-color: color-mix(in srgb, var(--glass-border) 86%, white 14%);
-  background: linear-gradient(160deg, color-mix(in srgb, var(--glass-top) 88%, white 12%), color-mix(in srgb, var(--glass-bottom) 88%, white 12%));
+  border-color: rgba(255,255,255,0.9);
+  background: linear-gradient(160deg, rgba(255,255,255,0.34), rgba(255,255,255,0.14));
   box-shadow:
     0 14px 30px rgba(48, 70, 118, 0.16),
     0 4px 12px rgba(77, 126, 214, 0.10),

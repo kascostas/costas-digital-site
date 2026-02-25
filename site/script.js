@@ -1,7 +1,10 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const themeButtons = [...document.querySelectorAll('.theme-btn')];
-const savedTheme = localStorage.getItem('themeMode') || 'auto';
+let savedTheme = 'auto';
+try {
+  savedTheme = localStorage.getItem('themeMode') || 'auto';
+} catch (_) {}
 
 function applyTheme(mode) {
   if (mode === 'light') {
@@ -22,7 +25,7 @@ applyTheme(savedTheme);
 for (const btn of themeButtons) {
   btn.addEventListener('click', () => {
     const mode = btn.dataset.theme || 'auto';
-    localStorage.setItem('themeMode', mode);
+    try { localStorage.setItem('themeMode', mode); } catch (_) {}
     applyTheme(mode);
   });
 }
