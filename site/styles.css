@@ -112,6 +112,10 @@ h1 {
 .btn.ghost:hover { background: rgba(255,255,255,.5); }
 
 .section { padding: 46px 0; }
+.panel {
+  transition: transform .7s ease, opacity .7s ease, filter .7s ease;
+  will-change: transform, opacity;
+}
 .grid { display: grid; gap: 16px; }
 .grid.two { grid-template-columns: 1.1fr .9fr; }
 .grid.three { grid-template-columns: repeat(3, 1fr); }
@@ -119,6 +123,14 @@ h1 {
 .card {
   border-radius: var(--radius);
   padding: 24px;
+}
+.float-card {
+  transform: translateY(0px);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.float-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(67, 88, 130, 0.24);
 }
 .card h2, .card h3 { margin-top: 0; }
 .card p, .card li { color: #2f394a; }
@@ -134,6 +146,17 @@ h1 {
   padding: 24px 0 34px;
   color: #5a6476;
   text-align: center;
+}
+
+.panel.panel-hidden {
+  opacity: 0;
+  transform: translateY(26px) scale(.985);
+  filter: blur(2px);
+}
+.panel.panel-show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
 }
 
 .reveal {
