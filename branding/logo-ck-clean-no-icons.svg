@@ -1,0 +1,28 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gBlue" x1="260" y1="360" x2="640" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28B8FF"/>
+      <stop offset="1" stop-color="#3D8BFF"/>
+    </linearGradient>
+    <linearGradient id="gSlash" x1="540" y1="470" x2="840" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C77DFF"/>
+      <stop offset="1" stop-color="#FF8F3F"/>
+    </linearGradient>
+    <linearGradient id="gKLeg" x1="760" y1="620" x2="930" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE27A"/>
+      <stop offset="1" stop-color="#F6C847"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" rx="250" fill="#0A1648"/>
+
+  <!-- C ring -->
+  <path d="M655 447C618 398 560 366 495 366C382 366 290 458 290 571C290 684 382 776 495 776C560 776 618 744 655 695"
+        stroke="url(#gBlue)" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- K main slash integrated from C opening -->
+  <path d="M610 670L850 430H970L725 690L610 670Z" fill="url(#gSlash)"/>
+
+  <!-- K lower leg -->
+  <path d="M760 690L900 835H790L695 710L760 690Z" fill="url(#gKLeg)"/>
+</svg>
