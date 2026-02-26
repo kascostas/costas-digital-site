@@ -4,6 +4,8 @@ body{font-family:Inter,sans-serif;background:#07101a;color:#ecf4ff;overflow-x:hi
 .wrap{width:min(1120px,92%);margin:0 auto;position:relative;z-index:2}
 .topbar{position:sticky;top:0;background:rgba(6,11,18,.55);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);z-index:10}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.logo-wrap{display:flex;align-items:center;gap:10px}
+.logo-img{width:34px;height:34px;border-radius:10px}
 .logo{font-weight:900;letter-spacing:.08em;font-size:.82rem;color:#9cc6ff}
 .hero{min-height:66vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:22px;padding:20px 0 6px}
 .hero-box{background:linear-gradient(165deg,rgba(24,40,64,.72),rgba(16,26,42,.62));border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:22px 22px 18px;box-shadow:0 20px 40px rgba(0,0,0,.28)}
