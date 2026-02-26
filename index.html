@@ -29,37 +29,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-P7H134L7DC', { debug_mode: true });
-
-    const gaHitSent = { load: false, visible: false };
-    function fireGaBootstrapHit(reason) {
-      if (gaHitSent[reason]) return;
-      gaHitSent[reason] = true;
-      const ts = Date.now();
-
-      gtag('event', 'page_view', {
-        page_location: window.location.href,
-        page_path: window.location.pathname,
-        page_title: document.title,
-        debug_mode: true,
-        event_id: `pv_${reason}_${ts}`
-      });
-
-      gtag('event', 'oc_ga4_boot', {
-        event_category: 'diagnostic',
-        event_label: reason,
-        non_interaction: true,
-        debug_mode: true,
-        event_id: `boot_${reason}_${ts}`
-      });
-    }
-
-    fireGaBootstrapHit('load');
-
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') fireGaBootstrapHit('visible');
-    });
+    gtag('config', 'G-P7H134L7DC');
   </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"da62c45516714da38e2985e38dfe0355"}'></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
