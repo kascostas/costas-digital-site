@@ -1,0 +1,44 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B2B"/>
+      <stop offset="1" stop-color="#04061D"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="170" y1="180" x2="620" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#83F0FF"/>
+      <stop offset="1" stop-color="#6FB8FF"/>
+    </linearGradient>
+    <linearGradient id="gWarm" x1="360" y1="220" x2="820" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD95B"/>
+      <stop offset="1" stop-color="#FF9E42"/>
+    </linearGradient>
+    <filter id="glow" x="120" y="150" width="920" height="560" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <g filter="url(#glow)">
+    <!-- C block -->
+    <path d="M210 240H470V310H290V490H470V560H210V240Z" fill="url(#gBlue)"/>
+
+    <!-- play cutout inside C -->
+    <circle cx="360" cy="400" r="84" fill="#050A2A"/>
+    <path d="M345 358L408 400L345 442V358Z" fill="url(#gWarm)"/>
+
+    <!-- K stem -->
+    <rect x="495" y="240" width="92" height="320" rx="8" fill="url(#gWarm)"/>
+
+    <!-- K arms -->
+    <path d="M587 390L725 240H850L675 424L587 390Z" fill="url(#gBlue)"/>
+    <path d="M587 410L745 560H630L587 523V410Z" fill="#050A2A"/>
+
+    <!-- cursor -->
+    <path d="M760 470L928 620L858 635L888 724L824 748L793 657L730 692L760 470Z" fill="url(#gWarm)"/>
+  </g>
+</svg>
