@@ -8,6 +8,8 @@ _Learn about the person you're helping. Update this as you go._
 - **Timezone:**
 - **Notes:**
   - Wants completion feedback immediately after any requested job is done.
+  - Wants watchdog updates for all agents (ETA, delay updates).
+  - Must ask before restarting any worker/sub-agent.
 
 ## Context
 
