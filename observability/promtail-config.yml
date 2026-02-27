@@ -1,0 +1,41 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: C:/Users/kasta/.openclaw/workspace/observability/promtail-positions.yml
+
+clients:
+  - url: http://127.0.0.1:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: openclaw
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: openclaw
+          host: AI
+          __path__: C:/Users/kasta/.openclaw/agents/*/sessions/*.jsonl
+
+  - job_name: windows-eventlog-app
+    windows_events:
+      use_incoming_timestamp: true
+      bookmark_path: C:/Users/kasta/.openclaw/workspace/observability/promtail-bookmark-app.xml
+      eventlog_name: Application
+      xpath_query: '*'
+      labels:
+        job: windows-eventlog
+        channel: Application
+        host: AI
+
+  - job_name: windows-eventlog-system
+    windows_events:
+      use_incoming_timestamp: true
+      bookmark_path: C:/Users/kasta/.openclaw/workspace/observability/promtail-bookmark-system.xml
+      eventlog_name: System
+      xpath_query: '*'
+      labels:
+        job: windows-eventlog
+        channel: System
+        host: AI
