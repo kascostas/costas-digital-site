@@ -33,3 +33,9 @@ h1{font-size:clamp(2rem,6vw,4.8rem);line-height:.95;margin:8px 0 14px;text-shado
 .foot{padding:20px 0 34px;color:#8ea4c3}
 @media(max-width:900px){.hero,.grid,.examples-grid,.channels-grid{grid-template-columns:1fr}.hero-box{padding:18px}.card img{min-height:320px}}
 
+
+.topnav{display:flex;gap:14px;align-items:center}
+.topnav a{color:#cfe3ff;text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.04em;padding:8px 10px;border-radius:10px;border:1px solid transparent}
+.topnav a:hover,.topnav a:focus-visible{border-color:rgba(125,208,255,.45);background:rgba(125,208,255,.08);outline:none}
+.topnav a.active{border-color:rgba(114,255,162,.45);background:rgba(114,255,162,.08)}
+@media(max-width:900px){.topbar .wrap{gap:10px;flex-wrap:wrap}.topnav{width:100%;justify-content:flex-start}}
