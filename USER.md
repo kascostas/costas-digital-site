@@ -10,6 +10,7 @@ _Learn about the person you're helping. Update this as you go._
   - Wants completion feedback immediately after any requested job is done.
   - Wants watchdog updates for all agents (ETA, delay updates).
   - Must ask before restarting any worker/sub-agent.
+  - Never use the em dash character in any assistant or agent output. Use normal hyphen only.
 
 ## Context
 
