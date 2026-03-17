@@ -15,11 +15,11 @@
 - Daily HP Smart Tank KPI Report | bio | 0 8 * * * | Europe/Nicosia | enabled
 
 ## Timezone migration recommendations
-- [ ] Move Nightly Dev Website Health to Europe/Nicosia.
-- [ ] Move Nightly Sec Security Review to Europe/Nicosia.
-- [ ] Move Nightly Mark Personal LinkedIn Feedback to Europe/Nicosia.
-- [ ] Move Morning Mission Control Summary to Europe/Nicosia.
-- [ ] Move Weekly Mark Content Approval Pack to Europe/Nicosia.
+- [x] Move Nightly Dev Website Health to Europe/Nicosia.
+- [x] Move Nightly Sec Security Review to Europe/Nicosia.
+- [x] Move Nightly Mark Personal LinkedIn Feedback to Europe/Nicosia.
+- [x] Move Morning Mission Control Summary to Europe/Nicosia.
+- [x] Move Weekly Mark Content Approval Pack to Europe/Nicosia.
 - [x] Daily HP Smart Tank KPI Report already uses Europe/Nicosia.
 
 ## Done
