@@ -5,7 +5,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** Costas
 - **What to call them:** Costas
 - **Pronouns:** _(optional)_
-- **Timezone:** Europe/Bucharest
+- **Timezone:** Europe/Nicosia
 - **Notes:**
   - Wants completion feedback immediately after any requested job is done.
   - Wants watchdog updates for all agents (ETA, delay updates).
