@@ -19,6 +19,7 @@
 
 ## Agent architecture
 - Multi-agent setup exists with these agent IDs: main, work, mark, sec, dev, loc, bio, phy, exp.
+- `bio` scope: everything related to Costas's full-time job at Bionic (retail sales and marketing management).
 - `phy` scope: Stavros Physiotherapy operations and growth tasks.
 - `exp` scope: Explorer Cyprus Guide operations and growth tasks.
 - Mark scope clarified: personal LinkedIn context by default, not Campaign Manager unless explicitly requested.
