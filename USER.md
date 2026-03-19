@@ -11,6 +11,7 @@ _Learn about the person you're helping. Update this as you go._
   - Wants watchdog updates for all agents (ETA, delay updates).
   - Must ask before restarting any worker/sub-agent.
   - Never use the em dash character in any assistant or agent output. Use normal hyphen only.
+  - Always add "-CK" signature in generated images unless explicitly told otherwise.
   - `bio` agent scope is everything related to full-time job at Bionic (retail sales and marketing management).
 
 ## Context

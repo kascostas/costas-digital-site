@@ -5,6 +5,7 @@
 - Preferred output rule: never use the em dash character; use normal hyphen.
 - Wants completion feedback immediately after requested jobs finish.
 - Wants watchdog-style updates for agents (ETA and delay updates).
+- Wants all generated images to include "-CK" signature by default.
 - Must ask before restarting any worker/sub-agent.
 
 ## Operating setup and decisions
