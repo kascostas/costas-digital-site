@@ -1,26 +1,34 @@
 {
   "linkedin": {
-    "lastCheckedAt": "2026-03-17T20:03:00Z",
+    "lastCheckedAt": "2026-03-19T10:11:00Z",
     "latestPost": {
       "urn": "urn:li:activity:7439292408091074561",
-      "postedAgo": "1d",
-      "impressions": 92,
-      "membersReached": 59,
-      "reactions": 2,
+      "postedAgo": "2d",
+      "impressions": 135,
+      "membersReached": 81,
+      "reactions": 5,
       "comments": 0,
       "reposts": 0
     }
   },
   "linkedinOutreach": {
-    "lastRunDate": "2026-03-17",
-    "sentCount": 32,
+    "lastRunDate": "2026-03-19",
+    "sentCount": 14,
     "lastNames": [
-      "Lia IOANNIDOU",
-      "panayiota stylianou",
-      "Dionysia Simatou",
-      "Savvia Pavlou",
-      "Christakis Georgiou",
-      "Vyronas Vrioni"
+      "Nicole Pitsilli",
+      "Mila Tanasi",
+      "Elena Charalambous",
+      "Mary Michaelidou",
+      "Ino Santama",
+      "Maria-Christina Andronicou",
+      "Marilena Christodoulides",
+      "Eleana Charalambous",
+      "Eleni Toulekki",
+      "OURANIA PAVLOU",
+      "Eleftheria Voskaridou",
+      "Natasha Michaelides",
+      "Maria Tsekoura",
+      "Constantinos Ioannides"
     ]
   }
 }
